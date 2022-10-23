@@ -1,0 +1,72 @@
+11 perguntas:
+
+1- Quem vai utilizar o sistema?
+	Faixa etária 
+		- 16+
+	Etapa de utilização - 
+		- (perguntar ao prof - diferentes etapas de utilizacao por diferentes
+							 faixas etarias?)
+	O que gostam e desgostam
+		- Sites simples, sem grandes complicacoes, onde possam comprar o que 
+		  tem a comprar de forma rapida e eficaz
+	Hábitos de trabalho
+		- 
+	Escolaridade e aptidões
+		- Ensino Secundario e/ou Universitario
+	Conhecimento da tecnologia
+		- Algum conhecimento mas nao muito a fundo
+	Deficiências físicas
+		- Nenhuma notavel
+	Caraterísticas físicas
+		- Maioritariamente sexo femenino
+
+
+2 - Que tarefas executam atualmente?
+	- Login/Registo
+		.Importancia: 5 caso queriam finalizar a compra, 1 caso contrario
+		.Frequencia: 2
+	- Visualizar artigos
+			.Importancia: 5
+			.Frequencia: 5
+		- Pesquisa
+		- Visualizar categoria/subcategoria
+	- Adicionar artigos aos favoritos 
+		.Importancia: 3
+		.Frequencia: 2
+	- Adicionar artigos ao carrinho 
+		.Importancia: 5
+		.Frequencia: 3
+	- Realizar a compra 
+		.Importancia: 5
+		.Frequencia: 2
+	- Contactar o suporte 
+		.Importancia: 3
+		.Frequencia: 1
+		 
+
+3 - Que tarefas são desejáveis?
+	- Visualizar o produto num ambiente 3d, com animacoes, de modo a obterem
+	  uma visualizao mais real do produto
+	- Terem animacoes no objeto de modo a os utilizadores perceberem como vao
+	  poderem interagir com o objeto no vida real quando estiverem na presenca
+	  do mesmo
+	
+
+4 - Como se aprendem as tarefas?
+	- Os utilizadores aprendem a representar as tarefas atraves de contacto 
+	  prelongado com lojas online 
+	- Os utilizadores tem no minimo de ter o quarto ano (saber ler e escrever)
+
+
+5 - Onde são desempenhadas as tarefas?
+	- Casa, trabalho 
+	- O utilizador nao precisa de nada para alem do computador para realizar a 
+	  tarefa	
+	- NOTA: esta pergunta (5), do que se trata mesmo?
+
+6 - Qual a relação entre o utilizador e a informação?
+	- Os dados sao guardados na conta do utilizador, sao acedidos atraves do 
+	  login/registo
+	- NOTA: informacao que os utilizadores estao dispostos a partilhar com
+			terceiros e muito relativa, pedir opiniao dos profs
+	
