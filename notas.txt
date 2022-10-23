@@ -1,0 +1,32 @@
+prototipo figma nao precisa de ser completamente igual ao web site
+
+o mais importante no website e o ambiente 3d e as funcionalidades do 
+ambiente 3d
+
+ao usar o orbit controls temos de ter cuidado para nao permitir certas
+coisas ao utilizador, ie: nao pode carregar botao lado direito, nao 
+permitir zoom suficiente na camera para dar clipping
+
+
+
+integracao do ambiente 3D no site da laredoute e valorizada, no entanto
+o mais importante e o ambiente 3d, fazer isso primeiro e depois de ter
+isso a funcionar fazer entao a integracao no site da laredoute
+
+(2 paginas essenciais -> listagem e pagina do produto)
+(listagem no entanto serve apenas para dar contexto, e so temos de fazer 
+uma pagina de um produto
+
+
+
+chegar ao HTML da laredoute e chapar nele o nosso canvas 
+nos botoes de lado, criar botoes que alterem vistas e/ou animacoes e 
+funcionalidades, interacao tambem deve ser possivel com o orbit controler
+mas de forma controlada( ver notas a acima )
+
+
+nada de backend, usar apenas html, js, e three js, usar apenas o live server
+para correr a info
+
+
+
