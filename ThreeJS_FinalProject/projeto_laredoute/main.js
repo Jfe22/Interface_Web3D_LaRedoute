@@ -1,24 +1,46 @@
+// create the scene 
 let scene = new THREE.Scene()
 scene.background = new THREE.Color(0xE5E5DA)
-let camera = new THREE.PerspectiveCamera( 60, window.innerWidth / window.innerHeight, 1, 1000 )
-let renderer = new THREE.WebGLRenderer()
+
+//create camera
+let camera = new THREE.PerspectiveCamera( 60, 800 / 600, 1, 1000 )
+
+//create the renderer and place it in the canvas
+let myCanvas = document.getElementById('myCanvas')
+let renderer = new THREE.WebGLRenderer({canvas: myCanvas})
+renderer.setSize(800, 600)
+//renderer options for better visibility
+renderer.toneMapping = THREE.ReinhardToneMapping;
+renderer.toneMappingExposure = 4;
+renderer.shadowMap.enabled = true
+
+//create orbit controls
 let controls = new THREE.OrbitControls(camera, renderer.domElement)
 
+//create axes
 let axes = new THREE.AxesHelper(10)
 scene.add(axes)
+
+//create grid
 let grid = new THREE.GridHelper()
 scene.add(grid)
 
-renderer.toneMapping = THREE.ReinhardToneMapping;
-renderer.toneMappingExposure = 4;
-renderer.setSize( window.innerWidth, window.innerHeight )
-renderer.shadowMap.enabled = true
-document.body.appendChild( renderer.domElement )
-
+//set camera position
 camera.position.x = -5
 camera.position.y = 8
 camera.position.z = 13
 camera.lookAt(0,2,0)
+
+
+
+//define animation vars and a mixer here
+let mixer = new THREE.AnimationMixer(scene)
+let animation1
+let animation2
+let animation3
+//etc...
+//--------------------------
+
 
 new THREE.GLTFLoader().load(
     'models/TV.gltf',
@@ -32,8 +54,25 @@ new THREE.GLTFLoader().load(
         }
 
     })
+
+    //to see the animations available on the object, uncoment line bellow and see animations property
+    //console.log(gltf.scene)
+
+    //bind animation to vars here
+    //clipAct = THREE.AnimationClip.findByName(gltf.animations, 'animation name')
+    //animation1 = mixer.clipAction(clipAni)
 }
 )
+
+
+//add events in buttons to trigger animations here
+
+//document.getElementById('btn_play').addEventListener("click", function() {
+//    animation1.play()
+//})
+
+//------------------------------------------------
+
 
 addLights()
 animate()
