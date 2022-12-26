@@ -1,0 +1,33 @@
+.imagens {
+    object-fit: cover;
+    width: 110px;
+}
+
+.img_principal {
+    object-fit: cover;
+    width: 400px;
+}
+
+.adicionar {
+    color: #fff;
+    background-color: #104F34;
+    border-color: #104F34;
+}
+
+.adicionar:hover {
+    color: #fff;
+    background-color: #093A25;
+    border-color: #093A25;
+}
+
+li {
+    list-style: circle;
+}
+
+.mt-3 {
+    list-style: none;
+}
+
+.breadcrumb-item {
+    list-style: none;
+}

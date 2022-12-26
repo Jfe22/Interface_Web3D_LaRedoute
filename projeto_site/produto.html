@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="projeto.css">
+    <link rel="stylesheet" href="produto.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
+        <a class="navbar-brand ml-5" href="index.html">
+            <img src="logo_laredoute.png" width="60" height="60" alt="Logo La Redoute">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-center">
+                <li class="nav-item">
+                    <a href="categoria.html" class="nav-link mr-5 menu-item nav-active">Casa</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link mr-5 menu-item nav-active">Moda</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link mr-5 menu-item nav-active">Outros</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contactos.html" class="nav-link mr-5  menu-item nav-active">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link mr-5  menu-item nav-active">Sobre</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">La Redoute</a></li>
+                <li class="breadcrumb-item"><a href="categoria.html">Sala de Estar</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Móveis TV</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-2">
+                <img onclick="onClick(1)" id="image1" class="imagens" src="produto_1.png">
+                <img onclick="onClick(2)" id="image2" class="imagens" src="produto_2.png">
+                <img onclick="onClick(3)" id="image3" class="imagens" src="produto_3.png">
+            </div>
+            <div class="col-5">
+                <img id="imagem" class="img_principal" src="produto_1.png">
+            </div>
+            <div class="col-5">
+                <h2>Móvel TV/hifi em pinho maciço e palhinha, Gabin</h2>
+                <hr>
+                <h3>483.75 €</h3>
+                <button type="button" class="btn btn-success adicionar">Adicionar ao Carrinho</button>
+            </div>
+
+
+
+            <h2>Descrição do artigo</h2>
+            <p>
+                Requintado por excelência. Pinho maciço ligeiramente polido + palhinha = transformação bem sucedida de
+                um móvel baixo para TV num móvel com caráter! Uma criação La Redoute Intérieurs.
+                Descrição:
+            </p>
+            <ul>
+                <li>Em pinho maciço ligeiramente polido, acabamento em carvalho com verniz nitrocelulósico</li>
+                <li>2 portas em palhinha</li>
+                <li>1 separador vertical</li>
+                <li>2 prateleiras amovíveis e reguláveis em 3 posições</li>
+                <li>4 nichos</li>
+                <li>2 gavetas sobre corrediças em madeira</li>
+                <li>Puxadores em metal envelhecido</li>
+                <li>Fundo do móvel em MDF decoração em madeira</li>
+            </ul>
+        </div>
+        <p>Dimensões: </p>
+        <p>Totais</p>
+        <ul>
+            <li>Comprimento: 152 cm</li>
+            <li>Altura: 50 cm</li>
+            <li>Profundidade: 45 cm</li>
+        </ul>
+        <p>Úteis</p>
+        <ul>
+            <li>Gavetas: larg. 40 x alt. 12 x prof. 33,5 cm</li>
+            <li>4 nichos (dim. úteis exceto prateleiras): larg. 46,5 x alt. 33 x prof. 39,4 cm</li>
+            <li>Altura dos pés: 8 cm</li>
+        </ul>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-4 mt-5">
+                    <h4><a href="index.html">La Redoute</a></h4>
+                    <ul>
+                        <li class="mt-3">
+                            <a href="">Sobre Nós</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="contactos.html">Contacte-nos</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Livro de Reclamações</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 mt-5">
+                    <h4><a href="">Produtos</a></h4>
+                    <ul>
+                        <li class="mt-3">
+                            <a href="categoria.html">Casa</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Moda</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Outlet</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Marcas</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Sustentabilidade</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4 mt-5">
+                    <h4><a href="">Serviços</a></h4>
+                    <ul>
+                        <li class="mt-3">
+                            <a href="">Ajuda</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Guia dos tamanhos</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Trocas e Devoluções</a>
+                        </li>
+                        <li class="mt-3">
+                            <a href="">Todos os Serviços</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <script>
+
+        let image1 = document.getElementById("image1").src;
+        let image2 = document.getElementById("image2").src;
+        let image3 = document.getElementById("image3").src;
+        let nome = document.getElementById("imagem");
+
+
+        function onClick(numero) {
+
+            switch (numero) {
+                case 1:
+                    nome.setAttribute("src", image1);
+                    break;
+                case 2:
+                    nome.setAttribute("src", image2);
+                    break;
+                case 3:
+                    nome.setAttribute("src", image3);
+                    break;
+            }
+            /*
+            image1.addEventListener('click', function mudarImagem() {
+                
+            })*/
+        }
+
+
+    </script>
+</body>
+
+</html>
