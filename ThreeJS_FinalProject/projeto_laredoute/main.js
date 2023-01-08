@@ -35,15 +35,17 @@ camera.lookAt(0,2,0)
 
 //define animation vars and a mixer here
 let mixer = new THREE.AnimationMixer(scene)
-let animation1
-let animation2
-let animation3
+var clock = new THREE.Clock()
+let doorLeftAni
+let doorRightAni
+let drawerDownAni
+let drawerUpAni
 //etc...
 //--------------------------
 
 
 new THREE.GLTFLoader().load(
-    'models/TV.gltf',
+    'models/TV10.gltf',
     function ( gltf ) {
     scene.add( gltf.scene )
 
@@ -56,8 +58,26 @@ new THREE.GLTFLoader().load(
     })
 
     //to see the animations available on the object, uncoment line bellow and see animations property
-    //console.log(gltf.scene)
+    console.log(gltf.scene)
 
+    //here we define the paused atributte of the animations to true because we want them to be loaded, but not played
+    //so that pressing the button in website just starts the animation instead of loading it
+
+    clipeTeste = THREE.AnimationClip.findByName(gltf.animations, 'drawerUpAction')
+    drawerUpAni = mixer.clipAction(clipeTeste)
+    drawerUpAni.paused = true
+
+    clipeTeste2 = THREE.AnimationClip.findByName(gltf.animations, 'drawerDownAction')
+    drawerDownAni = mixer.clipAction(clipeTeste2)
+    drawerDownAni.paused = true
+
+    clipeTeste3 = THREE.AnimationClip.findByName(gltf.animations, 'doorLeftAction')
+    doorLeftAni = mixer.clipAction(clipeTeste3)
+    doorLeftAni.paused = true
+
+    clipeTeste4 = THREE.AnimationClip.findByName(gltf.animations, 'doorRightAction')
+    doorRightAni = mixer.clipAction(clipeTeste4)
+    doorRightAni.paused = true
     //bind animation to vars here
     //clipAct = THREE.AnimationClip.findByName(gltf.animations, 'animation name')
     //animation1 = mixer.clipAction(clipAni)
@@ -73,6 +93,50 @@ new THREE.GLTFLoader().load(
 
 //------------------------------------------------
 
+document.getElementById('btn_ld').addEventListener("click", function() {
+    if (doorLeftAni.paused) {
+        doorLeftAni.paused = false
+    } else {
+        doorLeftAni.paused = true
+    }
+
+    console.log('play')
+    doorLeftAni.setLoop(THREE.LoopPingPong)
+    doorLeftAni.play()
+})
+document.getElementById('btn_rd').addEventListener("click", function() {
+    if (doorRightAni.paused) {
+        doorRightAni.paused = false
+    } else {
+        doorRightAni.paused = true
+    }
+
+    console.log('play')
+    doorRightAni.setLoop(THREE.LoopPingPong)
+    doorRightAni.play()
+})
+document.getElementById('btn_td').addEventListener("click", function() {
+    if (drawerUpAni.paused) {
+        drawerUpAni.paused = false
+    } else {
+        drawerUpAni.paused = true
+    }
+
+    console.log('play')
+    drawerUpAni.setLoop(THREE.LoopPingPong)
+    drawerUpAni.play()
+})
+document.getElementById('btn_bd').addEventListener("click", function() {
+    if (drawerDownAni.paused) {
+        drawerDownAni.paused = false
+    } else {
+        drawerDownAni.paused = true
+    }
+
+    console.log('play')
+    drawerDownAni.setLoop(THREE.LoopPingPong)
+    drawerDownAni.play()
+})
 
 addLights()
 animate()
@@ -80,6 +144,7 @@ animate()
 function animate() {
     requestAnimationFrame( animate )
     renderer.render( scene, camera )
+    mixer.update(clock.getDelta())
 }
 
 function addLights(){
