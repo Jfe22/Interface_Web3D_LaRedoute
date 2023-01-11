@@ -53,10 +53,8 @@ let drawerUpAni
 //let textureWood = new THREE.TextureLoader().load('models/textures/Wood028_2K_Color.png')
 
 var textureWood = new THREE.TextureLoader().load('models/textures/dark.jpg', function (textureWood) {
-
     textureWood.wrapS = textureWood.wrapT = THREE.RepeatWrapping;
-    textureWood.repeat.set(20, 20);
-
+    textureWood.repeat.set(1, 1);
 });
 let materialWood = new THREE.MeshBasicMaterial({ map: textureWood, side: THREE.DoubleSide })
 
@@ -85,6 +83,7 @@ new THREE.GLTFLoader().load(
             }
             if (x.name.includes('rack')) {
                 movel = x
+                material_blender = x.material
             }
         })
 
@@ -125,7 +124,6 @@ new THREE.GLTFLoader().load(
 //------------------------------------------------
 document.getElementById('btn_text').addEventListener("click", function () {
     if (contador == 0) {
-        material_blender = portaEsq.material
         portaEsq.material = portaDir.material = gavetaBaixo.material = gavetaCima.material = movel.material = materialWood
         contador = 1
     } else {
