@@ -1,0 +1,28 @@
+.imagens {
+    object-fit: cover;
+    width: 110px;
+}
+
+.img_principal {
+    object-fit: cover;
+    width: 450px;
+}
+
+li {
+    list-style: circle;
+}
+
+.mt-3 {
+    list-style: none;
+}
+
+.breadcrumb-item {
+    list-style: none;
+}
+
+
+ul.stars li {
+    display: inline;
+    font-size: 20px;
+    padding: 0 !important;
+}
