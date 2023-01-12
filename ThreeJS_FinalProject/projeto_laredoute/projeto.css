@@ -16,6 +16,19 @@ html {
     border-color: #093A25;
 }
 
+.buttonCanvas {
+    color: #fff;
+    background-color: #104F34;
+    border-color: #104F34;
+    padding: 5px 25px 6px 25px;
+}
+
+.buttonCanvas:hover {
+    color: #fff;
+    background-color: #093A25;
+    border-color: #093A25;
+}
+
 .navbar {
     background-color: #104F34 !important;
     font-weight: 600;
@@ -116,17 +129,71 @@ a:hover {
 }
 
 .section-products #product-1 .part-1::before {
-    background: url("produto_1.png") no-repeat center;
+    background: url("img/produto_1.png") no-repeat center;
     background-size: cover;
 		transition: all 0.3s;
 }
 .section-products #product-2 .part-1::before {
-    background: url("produto_2.png") no-repeat center;
+    background: url("img/produto_2.png") no-repeat center;
     background-size: cover;
 		transition: all 0.3s;
 }
 .section-products #product-3 .part-1::before {
-    background: url("produto_3.png") no-repeat center;
+    background: url("img/produto_3.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-4 .part-1::before {
+    background: url("img/produto_4.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-5 .part-1::before {
+    background: url("img/produto_5.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-6 .part-1::before {
+    background: url("img/produto_6.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-7 .part-1::before {
+    background: url("img/produto_7.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-8 .part-1::before {
+    background: url("img/produto_8.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-9 .part-1::before {
+    background: url("img/produto_9.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-10 .part-1::before {
+    background: url("img/produto_10.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-11 .part-1::before {
+    background: url("img/produto_11.png") no-repeat center;
+    background-size: cover;
+		transition: all 0.3s;
+}
+
+.section-products #product-12 .part-1::before {
+    background: url("img/produto_12.png") no-repeat center;
     background-size: cover;
 		transition: all 0.3s;
 }
@@ -186,7 +253,7 @@ a:hover {
 }
 
 .section-products .single-product .part-2 .product-title {
-    font-size: 1rem;
+    font-size: 20px;
 }
 
 .section-products .single-product .part-2 h4 {
@@ -199,6 +266,10 @@ a:hover {
     padding: 0 7px;
     margin-right: 2px;
     opacity: 0.6;
+}
+
+.product-price {
+    font-weight: bold;
 }
 
 footer {

@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top">
         <a class="navbar-brand ml-5" href="index.html">
-            <img src="logo_laredoute.png" width="60" height="60" alt="Logo La Redoute">
+            <img src="img/logo_laredoute.png" width="60" height="60" alt="Logo La Redoute">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,12 +53,12 @@
         </nav>
         <div class="row">
             <div class="col-2">
-                <img onclick="onClick(1)" id="image1" class="imagens" src="produto_3.png">
-                <img onclick="onClick(2)" id="image2" class="imagens" src="movel_2.png">
-                <img onclick="onClick(3)" id="image3" class="imagens" src="movel_3.png">
+                <img onclick="onClick(1)" id="image1" class="imagens" src="img/produto_3.png">
+                <img onclick="onClick(2)" id="image2" class="imagens" src="img/movel_2.png">
+                <img onclick="onClick(3)" id="image3" class="imagens" src="img/movel_3.png">
             </div>
             <div class="col-5">
-                <img id="imagem" class="img_principal" src="produto_3.png">
+                <img id="imagem" class="img_principal" src="img/produto_3.png">
             </div>
             <div class="col-5">
                 <h2 style="font-weight: bold;">Móvel TV/hifi em pinho maciço e palhinha, Gabin</h2>
@@ -68,6 +68,7 @@
                     <li><i class="fa fa-star"></i></li>
                     <li><i class="fa fa-star-half-alt"></i></li>
                     <li><i class="far fa-star"></i></li>
+                    <p>14 avaliações</p>
                 </ul>
                 <hr>
                 <div class="input-group input-group-sm mb-3" style="width: 170px;">
@@ -89,7 +90,7 @@
 
 
 
-            <h2>Descrição do artigo</h2>
+            <h2 style="font-weight: bold;">Descrição do artigo</h2>
             <p>
                 Requintado por excelência. Pinho maciço ligeiramente polido + palhinha = transformação bem sucedida de
                 um móvel baixo para TV num móvel com caráter! Uma criação La Redoute Intérieurs.
@@ -126,23 +127,20 @@
             <div class="col-3">
                 <label>Loop:
                     <select class="form-control" id="menu_loop">
-                        <option value="1">Uma Vez</option>
-                        <option value="2" selected>Repetir</option>
-                        <option value="3">Ping Pong</option>
+                        <option value="2" selected>Abrir</option>
+                        <option value="3">Abrir e fechar</option>
                     </select>
                 </label>
 
-                <button type="button" class="btn btn-success adicionar my-2" id="btn_ld">Porta Esquerda</button>
-                <button type="button" class="btn btn-success adicionar my-2" id="btn_rd">Porta Direita</button>
-                <button type="button" class="btn btn-success adicionar my-2" id="btn_td">Gaveta de Cima</button>
-                <button type="button" class="btn btn-success adicionar my-2" id="btn_bd">Gaveta de Baixo</button>
-                <button type="button" class="btn btn-success adicionar my-2" id="btn_abrir">Abrir Tudo</button>
-                <button type="button" class="btn btn-success adicionar my-2" id="btn_text">Mudar Textura</button>
+                <button type="button" class="btn btn-success buttonCanvas my-2" id="btn_ld">Porta Esquerda</button>
+                <button type="button" class="btn btn-success buttonCanvas my-2" id="btn_rd">Porta Direita</button>
+                <button type="button" class="btn btn-success buttonCanvas my-2" id="btn_td">Gaveta de Cima</button>
+                <button type="button" class="btn btn-success buttonCanvas my-2" id="btn_bd">Gaveta de Baixo</button>
+                <button type="button" class="btn btn-success buttonCanvas my-2" id="btn_abrir">Abrir Tudo</button>
+                <button type="button" class="btn btn-success buttonCanvas my-2" id="btn_text">Mudar Textura</button>
             </div>
         </div>
-
     </div>
-
 
     <footer>
         <div class="container">
@@ -217,15 +215,12 @@
     <script src="main.js"></script>
 
     <script>
-
         let image1 = document.getElementById("image1").src;
         let image2 = document.getElementById("image2").src;
         let image3 = document.getElementById("image3").src;
         let nome = document.getElementById("imagem");
 
-
         function onClick(numero) {
-
             switch (numero) {
                 case 1:
                     nome.setAttribute("src", image1);
@@ -238,8 +233,6 @@
                     break;
             }
         }
-
-
     </script>
 </body>
 

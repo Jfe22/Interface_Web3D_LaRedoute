@@ -122,6 +122,7 @@ new THREE.GLTFLoader().load(
 //})
 
 //------------------------------------------------
+
 document.getElementById('btn_text').addEventListener("click", function () {
     if (contador == 0) {
         portaEsq.material = portaDir.material = gavetaBaixo.material = gavetaCima.material = movel.material = materialWood
